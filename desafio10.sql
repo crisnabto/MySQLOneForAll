@@ -1,7 +1,7 @@
 SELECT
 	so.title_song AS nome,
-    COUNT(hi.id_song) AS reproducoes
-    FROM SpotifyClone.history AS hi
+  COUNT(hi.id_song) AS reproducoes
+  FROM SpotifyClone.history AS hi
 INNER JOIN SpotifyClone.songs AS so
 	ON so.id_song = hi.id_song
 INNER JOIN SpotifyClone.users AS us
